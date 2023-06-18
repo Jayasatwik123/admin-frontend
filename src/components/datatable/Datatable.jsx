@@ -61,7 +61,7 @@ const Datatable = ({columns}) => {
         pageSize={9}
         rowsPerPageOptions={[9]}
         checkboxSelection
-        getRowId={(row) => row.statId}
+        getRowId={(row) => row._id}
          
       />
       
