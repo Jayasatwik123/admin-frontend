@@ -53,7 +53,7 @@ const Datatable = ({columns}) => {
           Add New
         </Link>
       </div>
-      <DataGrid
+      <DataGrid>
         className="datagrid"
         rows={list}
         columns={columns.concat(actionColumn)}
