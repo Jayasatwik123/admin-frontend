@@ -11,7 +11,7 @@ const Datatable = ({columns}) => {
   const path = location.pathname.split("/")[1];
   const [list, setList] = useState({});
   const { data, loading, error } = useFetch(`/${path}`);
-
+console.log(list);
   useEffect(() => {
     setList(data);
   }, [data]);
@@ -61,7 +61,7 @@ const Datatable = ({columns}) => {
         rowsPerPageOptions={[9]}
         checkboxSelection
         getRowId={(row) => row.statId}
-         id={(row) => row._id}
+         
       />
       
     </div>
