@@ -52,7 +52,7 @@ const NewHotel = () => {
         photos: list,
       };
 
-      await axios.post("https://tourreservation.onrender.com/hotels", newhotel);
+      await axios.post("https://tourreservation.onrender.com/api/hotels", newhotel);
     } catch (err) {console.log(err)}
   };
   return (
