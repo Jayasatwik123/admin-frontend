@@ -12,6 +12,7 @@ const Datatable = ({columns}) => {
   const [list, setList] = useState({});
   const { data, loading, error } = useFetch(`/api/${path}`);
 console.log(list);
+console.log(path);  
   useEffect(() => {
     setList(data);
   }, [data]);
