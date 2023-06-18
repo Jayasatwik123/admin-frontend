@@ -20,7 +20,7 @@ function App() {
     const { user } = useContext(AuthContext);
 
     if (!user) {
-      return <Navigate to="/api/auth/login" />;
+      return <Navigate to="/login" />;
     }
 
     return children;
