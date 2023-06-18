@@ -61,6 +61,8 @@ const Datatable = ({columns}) => {
         rowsPerPageOptions={[9]}
         checkboxSelection
         getRowId={(row) => row._id}
+        id={(row)=>row._id}
+      </DataGrid>
       />
     </div>
   );
