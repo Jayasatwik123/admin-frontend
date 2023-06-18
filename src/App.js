@@ -20,7 +20,7 @@ function App() {
     const { user } = useContext(AuthContext);
 
     if (!user) {
-      return <Navigate to="https://tourreservation.onrender.com/login" />;
+      return <Navigate to="https://tourreservation.onrender.com/api/login" />;
     }
 
     return children;
