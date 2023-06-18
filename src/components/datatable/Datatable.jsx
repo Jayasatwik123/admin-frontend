@@ -12,7 +12,7 @@ const Datatable = ({columns}) => {
 
   const [list, setList] = useState({});
   const { data, loading, error } = useFetch("https://tourreservation.onrender.com/api/rooms");
-
+  console.log(data);
   useEffect(() => {
     setList(data);
   }, [data]);
