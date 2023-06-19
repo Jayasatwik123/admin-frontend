@@ -17,7 +17,7 @@ const NewHotel = () => {
   const handleChange = (e) => {
     setInfo((prev) => ({ ...prev, [e.target.id]: e.target.value }));
   };
-
+console.log(info);
   const handleSelect = (e) => {
     const value = Array.from(
       e.target.selectedOptions,
